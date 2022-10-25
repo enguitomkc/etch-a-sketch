@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    margin: 0;
+}
+.main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(122, 218, 241);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sidebar {
+    background-color: rgb(24, 5, 70);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Garamond, Georgia, serif;
+}
+
+#colorIndicator {
+    width: 100px;
+    height: 100px;
+    border: 10px solid white;
+    margin-bottom: 20px;
+}
+#colorInput {
+    font-size: 20px;
+    width: 115px;
+    background-color: #d3d3d3;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#eraserBtn,#clearBtn {
+    font-size: 24px;
+    display: block;
+    background-color: #d3d3d3;
+}
+
+
+.sliderContainer>.text {
+    text-align: center;
+    color: white;
+}
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin: 20px 0;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+
+
+
+
+
+
+.header {
+    color: rgb(145, 5, 98);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.container {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    background-color: white;
+    box-shadow: -20px -7px 17px rgb(2, 141, 175);
+}
